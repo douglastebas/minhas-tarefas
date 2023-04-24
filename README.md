@@ -1,6 +1,6 @@
-# minhas_tarefas
+# App Minhas Taregas
 
-A new Flutter project.
+Projeto desenvolvido em Flutter de um aplicativo mobile para você criar suas tarefas do dia-a-dia.
 
 ## Getting Started
 
