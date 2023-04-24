@@ -146,6 +146,8 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       task.isDone = !task.isDone;
       _saveToLocalStorage();
+      ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Tarefa concluída  (⁠☞ﾟ⁠∀ﾟ⁠)⁠☞')));
     });
   }
 
@@ -171,6 +173,8 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       taskList.removeWhere((item) => item.id == id);
       _saveToLocalStorage();
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('Tarefa excluída  =)')));
     });
   }
 
@@ -178,6 +182,8 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       taskList.add(newTask);
       _saveToLocalStorage();
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+          content: Text('Sua tarefa foi criada   ᕙ⁠(⁠ ⁠ ⁠•⁠ ⁠‿⁠ ⁠•⁠ ⁠ ⁠)⁠ᕗ')));
     });
     FocusManager.instance.primaryFocus?.unfocus();
     _scrollAnimation();
