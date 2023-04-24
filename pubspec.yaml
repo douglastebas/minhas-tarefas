@@ -1,5 +1,5 @@
 name: minhas_tarefas
-description: A new Flutter project.
+description: Aplicativo para adicionar novas tarefas pro seu dia-a-dia.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -35,6 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  shared_preferences: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -57,6 +58,9 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/images/logo_login.png
+    - assets/images/logo_black.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

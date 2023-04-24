@@ -1,0 +1,1 @@
+// Melhorias pra implementar com Firebase
